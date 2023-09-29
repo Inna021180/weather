@@ -14,23 +14,39 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather">
-        <h1>New York</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Clear</li>
-        </ul>
-
-        <div class="row">
-          <div class="col-6">
-            <img src="images/icons8-sun.gif" alt="Clear" /> 12 C | F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <!-- обертає контейнер з погодою та підпис автора -->
+        <div class="weather-app">
+          <!-- обертає весь блок погоди -->
+          <div class="overview">
+            <!-- обертає перший рядок назва міста, дата, характристика погоди Clear -->
+            <h1>New York</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/h</li>
+              <li>Friday 05:00</li>
+              <li>Clear</li>
             </ul>
+          </div>
+
+          <div class="row">
+            <!-- обертає другий рядок іконка погоди, температура, характристики погоди  -->
+            <div class="col-6">
+              <!-- обертає перший стовпчик- іконка погоди і температура  -->
+              <div class="clearfix weather-temperature">
+                <img src="images/icons8-sun.gif" alt="Clear" />
+                <div>
+                  <strong>12</strong>
+                  <span class="units">C | <a href="#">F</a> </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <!-- обертає другий стовпчик- характеристики погоди  -->
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2 km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small>
