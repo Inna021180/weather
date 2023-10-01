@@ -63,3 +63,12 @@ li {
   font-size: 16px;
   top: -34px; /* піднімає вгору units C and F*/
 }
+
+.weather-temperature a {
+  text-decoration: none;
+}
+.weather-temperature .active {
+  color: rgb(35, 35, 35);
+  cursor: default;
+}
+
