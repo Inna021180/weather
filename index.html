@@ -19,6 +19,23 @@
         <!-- обертає контейнер з погодою та підпис автора -->
         <div class="weather-app">
           <!-- обертає весь блок погоди -->
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
           <div class="overview">
             <!-- обертає перший рядок назва міста, дата, характристика погоди Clear -->
             <h1 id="city"></h1>
@@ -33,7 +50,7 @@
             <div class="col-6">
               <!-- обертає перший стовпчик- іконка погоди і температура  -->
               <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" />
+                <img src="" alt="" id="icon" />
                 <div>
                   <strong id="temperature"></strong>
                   <span class="units">°C | <a href="#">°F</a> </span>
